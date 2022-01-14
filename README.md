@@ -8,7 +8,7 @@
 
 # Beginner step
 
-1. Markdown file
+1. [Markdown file](https://github.com/niinp28/TIL/blob/master/studying_git/about_md.md)
 2. CLI
 3. GIT
 

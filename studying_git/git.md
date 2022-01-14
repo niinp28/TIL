@@ -30,6 +30,10 @@
     - 코밋 상태를 한줄로 확인한다.
   - git log -{숫자}
     - 숫자개의 코밋만 확인한다.
+  - git log --all
+    - 다른 branch의 로그까지 전부 보여준다.
+  - git log --graph
+    - graph 형식으로 log를 관찰할 수 있도록 한다.
 
 
 
@@ -54,7 +58,9 @@
 
 
 
-### clone
+## clone
+
+
 
 - git clone {url}
 
@@ -71,6 +77,11 @@
 
   - 최초의 clone 이후 (또는 이미 깃인 상태에서) 깃허브의 코밋으로 최신화 시킨다.
 
+
+## branch
+
+
+
 - git branch
   - 어떤 브랜치가 존재하는지, *표시가 있는것이 현재 브랜치
 
@@ -82,7 +93,7 @@
 
   - 해당 브랜치로 옮긴다.
   - git switch -c {branch 이름}
-    - 브랜치를 만듦과 동시에 해당 브랜치로 옮긴다.
+    - 브랜치를 **만듦과 동시에** 해당 브랜치로 옮긴다.
 
 - git switch -d {branch 이름}
 
@@ -94,7 +105,7 @@
 
   - 현재 브랜치에서 {branch 이름}을 병합시킨다.
 
-  - CONFLICT
+  - CONFLICT 상황 발생
 
     - A'B+AB'=A'B'
 
@@ -104,4 +115,37 @@
 
       \- vscode에서 어떤 식으로 정렬할지 결정 가능.
 
-      
+      ​	\-\- `code a.txt` 와 같이 명령어를 입력하면 바로 vscode로 연결된다.
+  
+  - github에서의 CONFLICT 상황
+    - a컴퓨터, b컴퓨터, 깃허브가 있음
+    - a컴퓨터가 a'으로 수정, 깃허브에 push
+    - b컴퓨터가 a~로 수정하고 코밋
+    - b컴퓨터가 깃허브를 pull
+    - CONFLICT
+  
+  
+
+## ignore
+
+
+
+- `touch .gitignore` 를 생성한다. 확장자는 편하게 txt로 하면 된다.
+  - 이 파일 안에 무시하고 싶은 파일을 적어 놓으면 add를 해도
+    해당 파일은 무시된다.
+- [https://gitignore.io](https://gitignore.io)
+  - 이 사이트를 들어가서 유용하게 ignore 관리가 가능하다.
+
+
+
+## reset
+
+- git reset --hard {돌아가고자 하는 commit의 아이디}
+  - 돌아가고자 하는 commit 상태로 돌아간다.
+
+
+
+
+## reflog
+
+- reset한 기록까지 포함하여 모든 commit log를 확인한다.
