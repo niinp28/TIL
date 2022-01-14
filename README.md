@@ -9,6 +9,6 @@
 # Beginner step
 
 1. [Markdown file](https://github.com/niinp28/TIL/blob/master/studying_git/about_md.md)
-2. CLI
-3. GIT
+2. [CLI](https://github.com/niinp28/TIL/blob/master/studying_git/about_CLI.md)
+3. [GIT](https://github.com/niinp28/TIL/blob/master/studying_git/git.md)
 
