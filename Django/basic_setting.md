@@ -38,7 +38,7 @@ python manage.py startapp articles
 
 7. 앱 등록 - settings.py에 앱 등록
 
-![settings](C:\Users\niinp\ssafy7\TIL\Django\basic_setting.assets\settings.JPG)
+![img](.\basic_setting.assets\settings.JPG)
 
 8. urls.py로 url과 view를 mapping한다.
 
