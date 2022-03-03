@@ -44,13 +44,13 @@ python manage.py startapp articles
 
 8. urls.py로 url과 view를 mapping한다.
 
-![url_map](basic_setting.assets\url_map.JPG)
+![url_map](./basic_setting.assets/url_map.JPG)
 
 9. view 함수를 작성, 관련 html파일을 render
 
-![view](basic_setting.assets\view.JPG)
+![view](./basic_setting.assets/view.JPG)
 
 10. html 파일을 생성해준다. 앱 안에 templates 폴더를 만들고 그 안에 생성한다.
 
-![templates](basic_setting.assets\templates.JPG)
+![templates](./basic_setting.assets/templates.JPG)
 
