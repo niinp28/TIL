@@ -38,7 +38,7 @@ python manage.py startapp articles
 
 7. 앱 등록 - settings.py에 앱 등록
 
-![img](basic_setting.assets\settings.JPG)
+![img](./basic_setting.assets/settings.JPG)
 
 
 
