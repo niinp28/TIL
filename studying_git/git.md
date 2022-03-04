@@ -135,6 +135,7 @@
     해당 파일은 무시된다.
 - [https://gitignore.io](https://gitignore.io)
   - 이 사이트를 들어가서 유용하게 ignore 관리가 가능하다.
+- 위치는 .git 폴더가 보이는 위치에 두면 된다.
 
 
 
