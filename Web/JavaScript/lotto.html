@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .ball-list {
+      display: block;
+    }
+    .ball {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      border-radius: 50px;
+      background-color: gold;
+      /* background-color: gold; */
+    }
+  </style>
+</head>
+<body>
+  <h1>로또 추첨</h1>
+  <button id="lottoButton">행운 번호 추첨</button>
+  <hr>
+
+  <section id ="result"></section>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+  <script>
+    const button = document.querySelector('#lottoButton')
+    button.addEventListener('click', function(){
+      const numbers = _.sampleSize(_.range(1, 46), 6).sort((a,b) => a-b)
+      const container = document.createElement('div')
+      
+      numbers.forEach(function(num){
+        const div = document.createElement('div')
+        div.innerText = num
+        if (num <= 10){
+          div.style.backgroundColor = 'red'
+        } else if (num <= 20){
+          div.style.backgroundColor = 'blue'
+        }
+        div.classList.add('ball')
+        container.append(div)
+      })
+      const section = document.querySelector('#result')
+      // section 안에 뭐가 있으면 지울게
+      const tmp = document.querySelector('section > div')
+      if (tmp){
+          tmp.remove()
+        }
+      section.append(container)
+
+    })
+    // 버튼을 누르면 lodash라이브러리를 통해 1 ~ 46가지의 랜덤한 6개의 숫자를 추출
+    // 나온 숫자를 출력 (새로운 element를 만들고, 숫자를 담은 후 section에 element를 더함)
+    // + 각각의 숫자에 위의 style에 나와있는 style 또는 직접 style을 작성
+    // + 숫자 크기별로 1~10, 11~20 다른 색상을 가지도록 수정
+    // + 버튼을 누르면 숫자가 누적되는게 아니라 값이 바뀌도록 (또는 삭제 후 재생성되도록) 수정
+  </script>
+  
+</body>
+</html>
