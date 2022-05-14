@@ -37,3 +37,4 @@
 </html>
 ```
 
+- v-model을 methods 안의 함수를 이용해서 실시간으로 data에 있는 message를 바꿔주는 방식으로 v-model을 구현해보았다. v-bind를 통해서 input 안의 value를 data의 message와 연결시켜주었다.
