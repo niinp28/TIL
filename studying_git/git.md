@@ -99,7 +99,8 @@
 
   - 브랜치를 삭제한다.
 
-
+- 깃허브 branch 탭 접속 - merge requests - merge로 합친다.
+  - git에서 push할땐 브랜치에서 push할 것.
 
 - git merge {branch 이름}
 
