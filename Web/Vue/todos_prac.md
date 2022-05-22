@@ -200,7 +200,11 @@ export default {
 </style>
 ```
 
+여기서 `:todo='todo'`의 의미:
 
+​	`:todo`는 props를 통해 자식 컴포넌트로 내려주기 위해 쓰는 것
+
+​	`"todo"`는 v-for 구문에 있는 todo
 
 - TodoListItem
 
